@@ -1,0 +1,33 @@
+.displayViev {
+	display: flex;
+	width: 80px;
+	gap: 10px;
+	justify-content: flex-end
+}
+
+.icon {
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.icon svg {
+	transition: all 0.3s ease-in-out;
+}
+
+.icon.active {
+	color: #9EC8B9;
+}
+
+.icon.active svg {
+	transform: scale(1.2);
+}
+
+.icon.inactive {
+	color: #13435B;
+}
+
+.icon.inactive svg {
+	transform: scale(1);
+}

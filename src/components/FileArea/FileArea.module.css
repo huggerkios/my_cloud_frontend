@@ -1,0 +1,15 @@
+.fileAreaWrapper {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	
+}
+
+.fileArea {
+	flex: 30% 0 1;
+	padding: 2rem;
+	height: 100%;
+}
+ 

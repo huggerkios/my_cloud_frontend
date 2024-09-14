@@ -1,0 +1,30 @@
+.userBoardTitle {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+.userBoardList {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	gap: 0.5rem;
+	color: #5C8374;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.userBoardItem {
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.userBoardItem:hover {
+	color: #9EC8B9;
+}
+
+.userBoardItem.active {
+	color: #9EC8B9;
+	font-weight: 700;
+}

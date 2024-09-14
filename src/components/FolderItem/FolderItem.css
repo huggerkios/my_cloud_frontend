@@ -1,0 +1,48 @@
+.folder-container {
+    margin: 1rem 0 1rem 0;
+    position: relative;
+}
+
+.folder-title:hover,
+.folder-container li:hover {
+    cursor: pointer;
+}
+
+.folder-container li:hover {
+    background-color: var(--light-color);
+    color: var(--dark);
+}
+
+.folder-container ul:first-of-type {
+    border-left: solid 1px;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+
+.folder-title {
+    line-height: 1.4em;
+    vertical-align: middle;
+}
+
+.folder-title:hover {
+    opacity: .6;
+}
+
+.icon-box {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+.folder-container ul:first-of-type,
+.folder-container+ul,
+.folder-container p {
+    display: none;
+}
+
+.folder-container.open ul:first-of-type,
+.folder-container.open+ul,
+.folder-container.open p {
+    display: block;
+}

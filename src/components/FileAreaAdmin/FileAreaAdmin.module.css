@@ -1,0 +1,38 @@
+.fileAreaWrapper {
+	display: flex;
+	height: 100%;
+	width: 20%;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+}
+
+.fileArea {
+	flex: 30% 0 1;
+	padding: 2rem;
+	height: 100%;
+}
+
+.fileAreaTitle {
+	font-size: 2rem;
+}
+
+.adminModeArea {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+}
+
+.adminMode {
+	font-size: 1.5rem;
+	color: #5C8374;
+}
+
+.fileInfoTitle {
+	font-size: 1.4rem;
+	color: #5C8374;
+	padding-bottom: 1rem;
+}
