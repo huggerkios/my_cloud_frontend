@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import loginUser from "../../../api/LoginUser";
+import loginUser from "../../../api/loginUser";
 
 function LoginForm() {
   const navigate = useNavigate();
