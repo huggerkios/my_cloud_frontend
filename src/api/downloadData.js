@@ -2,14 +2,13 @@ import Cookies from "js-cookie";
 import axios from "axios";
 
 async function downloadData(uuid) {
-  const host = String(import.meta.env.VITE_HOST);
-  const port = String(import.meta.env.VITE_PORT);
+  const base_url = import.meta.env.VITE_BASE_URL;
 
   const csrftoken = Cookies.get("csrftoken");
 
   try {
     const response = await axios.get(
-      `${host}:${port}/api/v1/cloud/files/${uuid}/download-link/`,
+      `${base_url}/api/v1/cloud/files/${uuid}/download-link/`,
       {
         headers: {
           "X-CSRFToken": csrftoken,
