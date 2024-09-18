@@ -3,12 +3,12 @@ import axios from "axios";
 axios.defaults.withCredentials = true;
 
 async function deleteFiles(id) {
-  const host = String(import.meta.env.VITE_HOST);
-  const port = String(import.meta.env.VITE_PORT);
+  const base_url = import.meta.env.VITE_BASE_URL;
+
   const csrftoken = Cookies.get("csrftoken");
 
   try {
-    await axios.delete(`${host}:${port}/api/v1/cloud/files/${id}/`, {
+    await axios.delete(`${base_url}/api/v1/cloud/files/${id}/`, {
       headers: {
         "X-CSRFToken": csrftoken, 
 		
