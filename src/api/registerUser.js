@@ -2,11 +2,11 @@ import axios from "axios";
 import useBoundStore from "../states/boundStore";
 
 const registerUser = async (username, full_name, email, password) => {
-  const host = String(import.meta.env.VITE_HOST);
-  const port = String(import.meta.env.VITE_PORT);
+  const base_url = import.meta.env.VITE_BASE_URL;
+
   try {
     const response = await axios.post(
-      `${host}:${port}/api/v1/auth/registration/`,
+      `${base_url}/api/v1/auth/registration/`,
       {
         username,
         full_name,
