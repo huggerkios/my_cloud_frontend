@@ -2,8 +2,7 @@ import Cookies from "js-cookie";
 import axios from "axios";
 
 async function renameFile(rename, comment, id) {
-  const host = String(import.meta.env.VITE_HOST);
-  const port = String(import.meta.env.VITE_PORT);
+  const base_url = import.meta.env.VITE_BASE_URL;
   const csrftoken = Cookies.get("csrftoken");
 
   const formData = new FormData();
@@ -12,7 +11,7 @@ async function renameFile(rename, comment, id) {
  
   try {
     const response = await axios.patch(
-      `${host}:${port}/api/v1/cloud/files/${id}/`,
+      `${base_url}/api/v1/cloud/files/${id}/`,
       formData,
       {
         headers: {
